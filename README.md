@@ -1,68 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">REACT-REDUX BOOKSTORE  👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/YemreAybey/bookstore-redux#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/YemreAybey/bookstore-redux/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+</p>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
 
-### `yarn start`
+In this project, I worked on a project for a fictional company that requires my help building a **Bookstore-Redux** using react. The project has been split into multiple milestones, and each milestone has functional and technical requirements I must meet.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The full project requirements can be found [here](https://github.com/microverseinc/project-redux-bookstore/blob/master/README.md).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Built With
 
-### `yarn test`
+- React
+- Redux
+- JavaScript (ES6)
+- Node.js
+- npm
+- React-Create-App
+- SCSS
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✨ [Live Demo](https://bookstore-react-redux.herokuapp.com)
 
-### `yarn build`
+## Usage
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> Clone the repository to your local machine
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```sh
+$ git clone https://github.com/YemreAybey/bookstore-redux.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> cd into the directory, install dependencies, build and start
 
-### `yarn eject`
+```sh
+$ cd basic-bookstore-redux
+$ npm install
+$ npm run build
+$ npm run start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> Open `http://127.0.0.1:3000` using your favourite broswer, if it doesn't open automatically.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Authors
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+👤 **Ebuka UMEOKONKWO**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Github: [@ebukaume](https://github.com/ebukaume)
+- Twitter: [@ebukaume](https://twitter.com/ebukaume)
 
-## Learn More
+👤 **Y.Emre AYBEY**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Github: [@YemreAybey](https://github.com/YemreAybey)
+- Twitter: [@YunusAybey](https://twitter.com/YunusAybey)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/YemreAybey/bookstore-redux/issues).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+1. Fork it (https://github.com/YemreAybey/bookstore-redux.git/fork)
+2. Create your working branch (git checkout -b [choose-a-name])
+3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
+4. Push to the branch (git push origin [chosen-name])
+5. Create a new Pull Request
 
-### Analyzing the Bundle Size
+## Show your support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+to see the app on heroku click [here](https://bookstore-react-redux.herokuapp.com)
