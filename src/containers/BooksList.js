@@ -1,21 +1,20 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import React from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import Book from "../components/Book";
 
 const BooksList = ({ books }) => (
   <table>
     <thead>
-      <th>Book ID</th>
-      <th>Title</th>
-      <th>Category</th>
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Category</th>
+      </tr>
     </thead>
     <tbody>
-      {books.map((book) => (
-        <tr key={book.id}>
-          <td>book.id</td>
-          <td>books.title</td>
-          <td>book.category</td>
-        </tr>
+      {books.map(book => (
+        <Book key={book.id} book={book} />
       ))}
     </tbody>
   </table>
@@ -25,8 +24,10 @@ const mapStateToProps = ({ books }) => ({ books });
 
 const matDispatchToProps = () => {};
 
-BooksList.prototype = {
-  book: PropTypes.array,
-};
+// BooksList.propTypes = {
+//   book: PropTypes.array
+// };
 
-export default connect(mapStateToProps, matDispatchToProps)(BooksList);
+export default BooksList;
+
+// export default connect(mapStateToProps, matDispatchToProps)(BooksList);
