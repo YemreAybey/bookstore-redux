@@ -32,9 +32,7 @@ const BooksList = ({ books, removeBook }) => {
 
 const mapStateToProps = ({ books }) => ({ books });
 
-const mapDispatchToProps = (dispatch) => (
-  { removeBook(book) { dispatch(removeBook(book)); } }
-);
+const mapDispatchToProps = { removeBook };
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object),

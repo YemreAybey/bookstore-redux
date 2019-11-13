@@ -83,9 +83,7 @@ class BooksForm extends React.Component {
   }
 }
 
-const mapDispatchToProps = dispatch => ({
-  createBook(book) { dispatch(createBook(book)); },
-});
+const mapDispatchToProps = { createBook };
 
 BooksForm.propTypes = {
   createBook: PropTypes.func.isRequired,
