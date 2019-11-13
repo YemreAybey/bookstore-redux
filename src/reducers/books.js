@@ -1,9 +1,15 @@
-const bookReducer = (state, action) => {
-  switch (action) {
+const bookReducer = (state = {}, action) => {
+  const newState = { ...state };
+
+  switch (action.type) {
     case 'CREATE_BOOK':
-      return [...state, action.payload];
+      newState.books = [...newState.books, action.book];
+      return newState;
     case 'REMOVE_BOOK':
-      return [...state].filter((book) => book.id !== action.payload.id);
+      newState.books = [...newState.books].filter(
+        (book) => book.id !== action.book.id,
+      );
+      return newState;
     default:
       return state;
   }

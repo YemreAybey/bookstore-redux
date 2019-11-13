@@ -11,14 +11,7 @@ const CATEGORIES = [
   'Sci-Fi',
 ];
 
-const handleFormSubmit = ({ text, selectedOption }) => {
-  const book = {
-    title: text,
-    category: selectedOption,
-  };
-
-  // Dispatch action to add book here
-  console.log(book);
+const handleFormSubmit = () => {
 };
 
 const BooksForm = () => (

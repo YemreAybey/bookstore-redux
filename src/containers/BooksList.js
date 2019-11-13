@@ -25,7 +25,12 @@ const BooksList = ({ books }) => (
 
 const mapStateToProps = ({ books }) => ({ books });
 
-const matDispatchToProps = () => {};
+const mapDispatchToProps = ({ createBook, removeBook }) => (
+  {
+    createBook,
+    removeBook,
+  }
+);
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object),
@@ -35,6 +40,4 @@ BooksList.defaultProps = {
   books: [{}],
 };
 
-export default BooksList;
-
-// export default connect(mapStateToProps, matDispatchToProps)(BooksList);
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);

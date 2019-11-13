@@ -4,9 +4,7 @@ import BooksForm from '../containers/BooksForm';
 
 const App = () => (
   <div>
-    <BooksList
-      books={[{ id: 1, title: 'Yemre and Ebuka', category: 'Fiction' }]}
-    />
+    <BooksList />
     <BooksForm />
   </div>
 );
