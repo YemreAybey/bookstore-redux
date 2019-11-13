@@ -47,7 +47,7 @@ class Form extends React.Component {
           value={selectedOption}
           onChange={this.handleSelect}
         >
-          {options.map((c) => (
+          {options.map(c => (
             <option
               key={c}
               value={c}
