@@ -1,11 +1,11 @@
 $bluish: #0290ff;
 
 .panel-bg {
-  width: 1400px;
   height: 95px;
   background-color: #ffffff;
   border-bottom: solid 1px #e8e8e8;
   .logo {
+    color: $bluish;
     width: 240px;
     height: 37px;
     font-family: Montserrat;
@@ -15,7 +15,7 @@ $bluish: #0290ff;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: $bluish;
+    margin-left: 15px;
   }
   .books {
     width: 59px;
