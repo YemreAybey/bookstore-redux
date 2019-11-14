@@ -13,9 +13,13 @@
 
 This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
 
-In this project, I worked on a project for a fictional company that requires my help building a **Bookstore-Redux** using react. The project has been split into multiple milestones, and each milestone has functional and technical requirements I must meet.
+In this project, we worked on a project for a fictional company that requires my help building a **Bookstore-Redux** using react. The project has been split into multiple milestones, and each milestone has functional and technical requirements we must meet.
 
 The full project requirements can be found [here](https://github.com/microverseinc/project-redux-bookstore/blob/master/README.md).
+
+## Note
+
+The UI is not responsive as we were not required to make it responsive. The main meat of the project was to efficiently use React and Redux to create a CMS for the bookstore.
 
 ## Built With
 
