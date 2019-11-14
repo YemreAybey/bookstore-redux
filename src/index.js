@@ -8,9 +8,10 @@ import App from './components/App';
 
 const initialStore = {
   books: [
-    { id: idGen(), title: 'My Book', category: 'Fiction' },
-    { id: idGen(), title: 'Good, Bad and Ugly', category: 'Fiction' },
+    { id: idGen(), title: 'My Book', category: 'History' },
+    { id: idGen(), title: 'Good, Bad and Ugly', category: 'Action' },
   ],
+  filter: '',
 };
 
 const store = createStore(combinedReducer, initialStore);
