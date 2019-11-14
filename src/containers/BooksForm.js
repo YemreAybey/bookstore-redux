@@ -48,7 +48,10 @@ class BooksForm extends React.Component {
     const { title, category } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form
+        onSubmit={this.handleSubmit}
+        className="flex align-center center"
+      >
         <input
           type="text"
           placeholder="Book Title"
@@ -59,6 +62,7 @@ class BooksForm extends React.Component {
         <select
           value={category}
           onChange={this.handleSelect}
+          className="categories"
         >
           {CATEGORIES.map(c => (
             <option

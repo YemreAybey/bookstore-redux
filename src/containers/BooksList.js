@@ -11,13 +11,21 @@ const BooksList = ({
     removeBook(book);
   };
 
-  const filteredBooks = (books, filter) => (
+  const filterBooks = (books, filter) => (
     filter ? books.filter(b => filter === b.category) : books
   );
-
+  const filteredBook = filterBooks(books, filter);
+  if (filteredBook.length === 0) {
+    return (
+      <div className="no_book flex justify-center align-center">
+        No Book
+        <i className="fa fa-book fa-2x" />
+      </div>
+    );
+  }
   return (
     <div className="booklist">
-      {filteredBooks(books, filter).map(book => (
+      {filteredBook.map(book => (
         <Book
           key={book.id}
           data={book}

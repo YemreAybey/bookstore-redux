@@ -149,6 +149,28 @@
   background-color: #e8e8e8;
 }
 
+.no_book {
+  width: 1200px;
+  height: 200px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  margin: 20px auto;
+  font-size: 50px;
+  color: #4386bf;
+}
+
+.fa-book {
+  margin-left: 10px;
+}
+
+form {
+  width: 1200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
