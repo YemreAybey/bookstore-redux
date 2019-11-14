@@ -9,11 +9,11 @@ const Book = ({ data, removeBook }) => (
       <div className="details flex-column">
         <span className="category">{data.category}</span>
         <h2 className="title">{data.title}</h2>
-        <span className="author">Abbey Ebuka</span>
+        <span className="author">{data.author}</span>
       </div>
       <div className="actions flex justify-between align-center">
         <button
-          className="remove"
+          className="red"
           onClick={() => removeBook(data)}
           type="button"
         >
@@ -22,6 +22,7 @@ const Book = ({ data, removeBook }) => (
         <div className="vertical" />
         <button
           type="button"
+          className="blue"
         >
           Edit
         </button>
@@ -35,6 +36,7 @@ Book.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }).isRequired,
 };

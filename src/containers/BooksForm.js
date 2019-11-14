@@ -11,17 +11,23 @@ class BooksForm extends React.Component {
     super(props);
     this.state = {
       title: '',
+      author: '',
       category: CATEGORIES[0],
     };
 
     this.handleSelect = this.handleSelect.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleAuthorChange = this.handleAuthorChange.bind(this);
+    this.handleTitleChange = this.handleTitleChange.bind(this);
   }
 
 
-  handleInputChange(e) {
+  handleTitleChange(e) {
     this.setState({ title: e.target.value });
+  }
+
+  handleAuthorChange(e) {
+    this.setState({ author: e.target.value });
   }
 
   handleSelect(e) {
@@ -30,12 +36,10 @@ class BooksForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const { title, category } = this.state;
     const { createBook } = this.props;
     const book = {
       id: idGen(),
-      title,
-      category,
+      ...this.state,
     };
     this.setState({
       title: '',
@@ -45,36 +49,55 @@ class BooksForm extends React.Component {
   }
 
   render() {
-    const { title, category } = this.state;
+    const { title, author, category } = this.state;
 
     return (
-      <form
-        onSubmit={this.handleSubmit}
-        className="flex align-center center"
-      >
-        <input
-          type="text"
-          placeholder="Book Title"
-          value={title}
-          onChange={this.handleInputChange}
-        />
-
-        <select
-          value={category}
-          onChange={this.handleSelect}
-          className="categories"
+      <div className="center form-wrapper">
+        <h2
+          className="form-title"
         >
-          {CATEGORIES.map(c => (
-            <option
-              key={c}
-              value={c}
-            >
-              {c}
-            </option>
-          ))}
-        </select>
-        <input type="submit" value="Save the Book" />
-      </form>
+          ADD NEW BOOK
+        </h2>
+        <form
+          onSubmit={this.handleSubmit}
+          className="flex align-center center"
+        >
+          <input
+            type="text"
+            placeholder="Book Title"
+            value={title}
+            onChange={this.handleTitleChange}
+          />
+
+          <input
+            type="text"
+            placeholder="Book Author"
+            value={author}
+            onChange={this.handleAuthorChange}
+          />
+
+          <select
+            value={category}
+            onChange={this.handleSelect}
+            className="categories"
+          >
+            {CATEGORIES.map(c => (
+              <option
+                key={c}
+                value={c}
+              >
+                {c}
+              </option>
+            ))}
+          </select>
+          <button
+            type="submit"
+            className="blue"
+          >
+        Save the Book
+          </button>
+        </form>
+      </div>
     );
   }
 }

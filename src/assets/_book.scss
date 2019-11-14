@@ -62,31 +62,34 @@
 .actions {
   margin-right: 50px;
   width: 250px;
-  
-  button {
-    width: 100px;
-    height: 33px;
-    border-radius: 3px;
-    border: 0px;
-    background-color: $bluish;
-    font-family: RobotoSlab;
-    font-size: 13px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    text-align: center;
-    color: #ffffff;
+}
 
-    &:hover{
-      cursor: pointer;
-    }
-  }
+button {
+  width: 100px;
+  height: 33px;
+  border-radius: 3px;
+  border: 0px;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
 
-  .remove {
-    background-color: red;
+  &:hover{
+    cursor: pointer;
   }
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: $bluish;
 }
 
 .vertical {

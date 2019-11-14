@@ -1,9 +1,10 @@
 .categories {
-  width: 285px;
+  width: 250px;
   height: 45px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
+  padding-left: 20px;
 }
 
 .panel-bg {
@@ -117,12 +118,11 @@
   width: 250px;
 }
 
-.actions button {
+button {
   width: 100px;
   height: 33px;
   border-radius: 3px;
   border: 0px;
-  background-color: #0290ff;
   font-family: RobotoSlab;
   font-size: 13px;
   font-weight: 300;
@@ -134,12 +134,16 @@
   color: #ffffff;
 }
 
-.actions button:hover {
+button:hover {
   cursor: pointer;
 }
 
-.actions .remove {
+.red {
   background-color: red;
+}
+
+.blue {
+  background-color: #0290ff;
 }
 
 .vertical {
@@ -164,11 +168,37 @@
   margin-left: 10px;
 }
 
-form {
+.form-wrapper {
   width: 1200px;
+}
+
+form {
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+form input[type="text"] {
+  width: 350px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  padding-left: 10px;
+}
+
+.form-title {
+  width: 174px;
+  height: 24px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888888;
 }
 
 .flex {

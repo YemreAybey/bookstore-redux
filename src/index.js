@@ -10,8 +10,18 @@ import App from './components/App';
 
 const initialStore = {
   books: [
-    { id: idGen(), title: 'My Book', category: 'History' },
-    { id: idGen(), title: 'Good, Bad and Ugly', category: 'Action' },
+    {
+      id: idGen(),
+      title: 'My Book',
+      author: 'Yemre',
+      category: 'History',
+    },
+    {
+      id: idGen(),
+      title: 'Good, Bad and Ugly',
+      author: 'Ebuka',
+      category: 'Action',
+    },
   ],
   filter: '',
 };
