@@ -1,5 +1,5 @@
 import React from 'react';
-import CategoryFilter from '../components/CategoryFilter'
+import CategoryFilter from './CategoryFilter';
 
 const Navbar = () => (
   <nav className="panel-bg flex align-center center">

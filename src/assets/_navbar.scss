@@ -34,25 +34,3 @@ $bluish: #0290ff;
     color: $bluish;
   }
 }
-
-.flex {
-  display: flex;
-}
-.align-center {
-  align-items: center;
-}
-.right {
-  margin-left: auto;
-}
-.center {
-  margin: 0 auto;
-}
-.oval {
-  width: 45px;
-  height: 45px;
-  border: solid 1px #e8e8e8;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

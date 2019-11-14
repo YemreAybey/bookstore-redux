@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook, changeFilter } from '../actions';
+import { removeBook } from '../actions';
 import Book from '../components/Book';
 
 const BooksList = ({
@@ -16,26 +16,15 @@ const BooksList = ({
   );
 
   return (
-    <>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredBooks(books, filter).map(book => (
-            <Book
-              key={book.id}
-              data={book}
-              removeBook={handleRemoveBook}
-            />
-          ))}
-        </tbody>
-      </table>
-    </>
+    <div className="booklist">
+      {filteredBooks(books, filter).map(book => (
+        <Book
+          key={book.id}
+          data={book}
+          removeBook={handleRemoveBook}
+        />
+      ))}
+    </div>
   );
 };
 
