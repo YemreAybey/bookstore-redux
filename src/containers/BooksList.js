@@ -3,17 +3,12 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeBook, changeFilter } from '../actions';
 import Book from '../components/Book';
-import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = ({
-  books, filter, changeFilter, removeBook,
+  books, filter, removeBook,
 }) => {
   const handleRemoveBook = (book) => {
     removeBook(book);
-  };
-
-  const handleFilterChange = (filter) => {
-    changeFilter(filter);
   };
 
   const filteredBooks = (books, filter) => (
@@ -22,7 +17,6 @@ const BooksList = ({
 
   return (
     <>
-      <CategoryFilter onFilterChange={handleFilterChange} />
       <table border="1">
         <thead>
           <tr>
@@ -47,12 +41,11 @@ const BooksList = ({
 
 const mapStateToProps = ({ books, filter }) => ({ books, filter });
 
-const mapDispatchToProps = { removeBook, changeFilter };
+const mapDispatchToProps = { removeBook };
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object),
   filter: PropTypes.string.isRequired,
-  changeFilter: PropTypes.func.isRequired,
   removeBook: PropTypes.func.isRequired,
 };
 

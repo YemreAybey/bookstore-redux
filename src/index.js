@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import 'font-awesome/css/font-awesome.min.css';
+import './assets/main.css';
 import combinedReducer from './reducers/index';
 import idGen from './utils/idGenerator';
 import App from './components/App';
