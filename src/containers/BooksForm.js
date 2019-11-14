@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import { createBook } from '../actions';
 import idGen from '../utils/idGenerator';
-import CATEGORIES from '../utils/category';
+import CATEGORIES from '../lib/category';
 
 
 class BooksForm extends React.Component {
