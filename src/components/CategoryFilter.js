@@ -7,9 +7,10 @@ import CATEGORIES from '../lib/category';
 
 const CATEGORY_FILTER = ['All', ...CATEGORIES];
 
-const CategoryFilter = ({ onFilterChange }) => (
+const CategoryFilter = ({ changeFilter }) => (
   <select
-    onChange={(e) => onFilterChange(e.target.value)}
+    onChange={(e) => changeFilter(e.target.value)}
+    className="categories center"
   >
     {CATEGORY_FILTER.map(c => (
       <option
@@ -23,7 +24,7 @@ const CategoryFilter = ({ onFilterChange }) => (
 );
 
 CategoryFilter.propTypes = {
-  onFilterChange: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };
 
 export default connect(null, { changeFilter })(CategoryFilter);

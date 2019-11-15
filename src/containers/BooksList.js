@@ -1,58 +1,48 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook, changeFilter } from '../actions';
+import { removeBook } from '../actions';
 import Book from '../components/Book';
-import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = ({
-  books, filter, changeFilter, removeBook,
+  books, filter, removeBook,
 }) => {
   const handleRemoveBook = (book) => {
     removeBook(book);
   };
 
-  const handleFilterChange = (filter) => {
-    changeFilter(filter);
-  };
-
-  const filteredBooks = (books, filter) => (
+  const filterBooks = (books, filter) => (
     filter ? books.filter(b => filter === b.category) : books
   );
-
+  const filteredBook = filterBooks(books, filter);
+  if (filteredBook.length === 0) {
+    return (
+      <div className="no_book flex justify-center align-center">
+        No Book
+        <i className="fa fa-book fa-2x" />
+      </div>
+    );
+  }
   return (
-    <>
-      <CategoryFilter onFilterChange={handleFilterChange} />
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredBooks(books, filter).map(book => (
-            <Book
-              key={book.id}
-              data={book}
-              removeBook={handleRemoveBook}
-            />
-          ))}
-        </tbody>
-      </table>
-    </>
+    <div className="booklist">
+      {filteredBook.map(book => (
+        <Book
+          key={book.id}
+          data={book}
+          removeBook={handleRemoveBook}
+        />
+      ))}
+    </div>
   );
 };
 
 const mapStateToProps = ({ books, filter }) => ({ books, filter });
 
-const mapDispatchToProps = { removeBook, changeFilter };
+const mapDispatchToProps = { removeBook };
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object),
   filter: PropTypes.string.isRequired,
-  changeFilter: PropTypes.func.isRequired,
   removeBook: PropTypes.func.isRequired,
 };
 
