@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 import 'font-awesome/css/font-awesome.min.css';
 import './assets/main.css';
 import combinedReducer from './reducers/index';
@@ -26,7 +27,7 @@ const initialStore = {
   filter: '',
 };
 
-const store = createStore(combinedReducer, initialStore);
+const store = createStore(combinedReducer, initialStore, applyMiddleware(thunk));
 
 const AppWrapper = () => (
   <Provider store={store}>
