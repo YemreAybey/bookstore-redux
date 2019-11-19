@@ -60,7 +60,7 @@ class BooksForm extends React.Component {
         </h2>
         <form
           onSubmit={this.handleSubmit}
-          className="flex align-center center"
+          className="flex align-center center small-size"
         >
           <input
             type="text"
@@ -94,7 +94,7 @@ class BooksForm extends React.Component {
             type="submit"
             className="blue"
           >
-        Save the Book
+            Save Book
           </button>
         </form>
       </div>

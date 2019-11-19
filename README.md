@@ -17,9 +17,9 @@ In this project, we worked on a project for a fictional company that requires my
 
 The full project requirements can be found [here](https://github.com/microverseinc/project-redux-bookstore/blob/master/README.md).
 
-## Note
+## Backend
 
-The UI is not responsive as we were not required to make it responsive. The main meat of the project was to efficiently use React and Redux to create a CMS for the bookstore.
+For the backend we've used rails. For now you can add a book and remove it. You can see our rails-api app [here](https://github.com/ebukaume/bookstore-api)
 
 ## Built With
 
