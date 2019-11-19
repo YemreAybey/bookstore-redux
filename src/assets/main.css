@@ -170,7 +170,7 @@ button:hover {
 
 .form-wrapper {
   width: 90vw;
-  height: 230px;
+  min-height: 100px;
 }
 
 form {
@@ -207,6 +207,9 @@ form input:not(:first-child), form select, form button {
 }
 
 @media screen and (max-width: 600px) {
+  .form-wrapper {
+    height: 230px;
+  }
   form.small-size {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -227,6 +230,7 @@ form input:not(:first-child), form select, form button {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    margin-left: 0px;
   }
 }
 

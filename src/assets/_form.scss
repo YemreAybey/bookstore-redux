@@ -1,6 +1,6 @@
 .form-wrapper{
   width: 90vw;
-  height: 230px;
+  min-height: 100px;
 }
 
 form {
@@ -33,6 +33,9 @@ form {
   color: #888888;
 }
 @media screen and (max-width:600px) {
+  .form-wrapper {
+    height: 230px;
+  }
   form.small-size {
     display: flex;
     height: 100%;
@@ -42,6 +45,7 @@ form {
     input, select {
        width:100%;
        box-sizing: border-box;
+       margin-left: 0px;
     }
   }
     
