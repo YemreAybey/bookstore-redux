@@ -1,5 +1,6 @@
 .form-wrapper{
   width: 90vw;
+  height: 230px;
 }
 
 form {
@@ -14,6 +15,9 @@ form {
   background-color: #ffffff;
   padding-left: 10px;
  }
+ input:not(:first-child), select, button {
+   margin-left: 5px;
+ }
 }
 
 .form-title {
@@ -27,4 +31,18 @@ form {
   line-height: normal;
   letter-spacing: -0.18px;
   color: #888888;
+}
+@media screen and (max-width:600px) {
+  form.small-size {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    input, select {
+       width:100%;
+       box-sizing: border-box;
+    }
+  }
+    
 }

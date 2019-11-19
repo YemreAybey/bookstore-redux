@@ -61,15 +61,14 @@
 
 .book {
   width: 90vw;
-  min-height: 170px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
   margin-bottom: 15px;
+  padding: 15px 0px;
 }
 
 .details {
-  margin-top: 32px;
   margin-left: 27px;
 }
 
@@ -88,8 +87,8 @@
 }
 
 .title {
-  width: 197px;
-  height: 29px;
+  max-width: 400px;
+  min-height: 29px;
   font-family: RobotoSlab;
   font-size: 22px;
   font-weight: bold;
@@ -98,11 +97,12 @@
   line-height: normal;
   letter-spacing: -0.2px;
   color: #121212;
+  margin-bottom: 1px;
 }
 
 .author {
   width: 107px;
-  height: 19px;
+  min-height: 19px;
   font-family: RobotoSlab;
   font-size: 14px;
   font-weight: 300;
@@ -170,6 +170,7 @@ button:hover {
 
 .form-wrapper {
   width: 90vw;
+  height: 230px;
 }
 
 form {
@@ -188,6 +189,10 @@ form input[type="text"] {
   padding-left: 10px;
 }
 
+form input:not(:first-child), form select, form button {
+  margin-left: 5px;
+}
+
 .form-title {
   width: 174px;
   height: 24px;
@@ -199,6 +204,30 @@ form input[type="text"] {
   line-height: normal;
   letter-spacing: -0.18px;
   color: #888888;
+}
+
+@media screen and (max-width: 600px) {
+  form.small-size {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  form.small-size input, form.small-size select {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }
 
 .flex {
@@ -251,6 +280,7 @@ form input[type="text"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 15px;
 }
 
 .justify-between {
