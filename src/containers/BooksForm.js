@@ -94,7 +94,7 @@ class BooksForm extends React.Component {
             type="submit"
             className="blue"
           >
-        Save the Book
+            Save Book
           </button>
         </form>
       </div>
