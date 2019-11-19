@@ -1,0 +1,52 @@
+.form-wrapper{
+  width: 90vw;
+  min-height: 100px;
+}
+
+form {
+ width: 100%;
+ justify-content: space-between;
+
+ input[type="text"] {
+  width: 350px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  padding-left: 10px;
+ }
+ input:not(:first-child), select, button {
+   margin-left: 5px;
+ }
+}
+
+.form-title {
+  width: 174px;
+  height: 24px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888888;
+}
+@media screen and (max-width:600px) {
+  .form-wrapper {
+    height: 230px;
+  }
+  form.small-size {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    input, select {
+       width:100%;
+       box-sizing: border-box;
+       margin-left: 0px;
+    }
+  }
+    
+}

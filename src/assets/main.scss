@@ -1,0 +1,45 @@
+@import './category';
+@import './navbar';
+@import './book';
+@import './form';
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+.align-between {
+ align-items: stretch; 
+}
+.right {
+  margin-left: auto;
+}
+.center {
+  margin: 0 auto;
+}
+.oval {
+  width: 45px;
+  height: 45px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.right-pad-5 {
+  padding-right: 50px;
+}
