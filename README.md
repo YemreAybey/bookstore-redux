@@ -8,10 +8,17 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
 </p>
+<p>
+  <a href="https://bookstore-react-redux.herokuapp.com" target="_blank">
+    <img alt="Website" src="https://res.cloudinary.com/yemreaybey/image/upload/v1575559497/Portfolio/bookstore-portfolio_qiclh2.png" />
+  </a>
+</p>
 
 <br>
 
-This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
+## Info
+
+This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!").
 
 In this project, we worked on a project for a fictional company that requires my help building a **Bookstore-Redux** using react. The project has been split into multiple milestones, and each milestone has functional and technical requirements we must meet.
 
@@ -74,8 +81,13 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 4. Push to the branch (git push origin [chosen-name])
 5. Create a new Pull Request
 
+## Future Ideas
+
+- Add login and logout pages.
+- Add a checkout page and let the users buy the books.
+- Make the ui great.
+- Add a summary section for books.
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-to see the app on heroku click [here](https://bookstore-react-redux.herokuapp.com)
